@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Set background image */
+    background-image: url('../../static/images/bg.jpg'); /* Adjust the path to reach the image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.6); /* Added transparency for better visibility */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.logo{
+    width: 110px;
+    height: auto;
+    margin-left: 950px;
+    margin-top: 15px;
+    vertical-align: middle;
+    position: absolute;
+    top: 7px;
+    right :10 px;
+}
+h1 {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+.heading {
+    text-align: center;
+}
+/* Remaining CSS styles... */
+
+.question-form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: larger;
+    color: #666;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #a80505;
+    transition: 2s;
+}
+
+.result {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    height: 250px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.mario{
+    position: absolute;
+    bottom : 35px ;
+    left: 0px;
+    width: 150px;
+    animation-name: drive;
+    animation-duration: 10s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+}
+@keyframes drive {
+    from {transform: translateX(0);}
+    to {transform: translateX(1930px);}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="h1"> Traffic Guru</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="../../static/images/traffic.png">
+</head>
+<body >
+    <div class="container">
+        <h1 class = "heading">Traffic Guru </h1>
+        <img src=" ../../static/images/traffic.png" alt="logo" class ="logo">
+        <form action="/process" method="post" class="question-form">
+            <label for="user_input">Enter your question:</label>
+            <input type="text" id="user_input" name="user_input" required>
+            <button type="submit">SUBMIT</button>
+        </form>
+        {% if user_input %}
+            <div class="result">
+                <h2>Question:</h2>
+                <p>{{ user_input }}</p>
+                <h2>Answer:</h2>
+                <p>{{ predicted_answer }}</p>
+            </div>
+        {% endif %}
+    </div>
+    <img class="mario" src="../../static/images/mario.png">
+</body>
+</html>
